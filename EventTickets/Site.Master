@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EventTickets.SiteMaster" %>
+<%@ Register Src="Cart/Cart.ascx" TagName="Cart" TagPrefix="c" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<title>All Access Ticketing</title>
+<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<asp:ContentPlaceHolder ID="H" runat="server"></asp:ContentPlaceHolder>
+<script language="javascript" type="text/javascript">
+// <![CDATA[
+
+function bSales_onclick() {
+
+}
+
+// ]]>
+</script>
+</head>
+<body>
+<form id="Form1" runat="server">
+  <div class="page">
+    <div class="main">
+      <table cellpadding="0" cellspacing="0" width="100%" height="100%">
+        <tr>
+          <td id="tdleft" runat="server" width="79%" height="100%"><table cellpadding="0" cellspacing="0" width="100%" height="100%">
+              <tr>
+                <td><div class="title"> <img src="../images/Logo.png"  width="500" height="60"/> </div></td>
+              </tr>
+              <tr>                
+                <td style="padding-bottom:5px;width:100%">
+                    <table cellpadding="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td width="90%">
+                                <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td><input type="button" value="Home" onclick="location.href='../Sales/Index.aspx'" /></td></td>
+                                    <td style="padding-left:10px">
+                                <input type="button" value="Back" onclick="history.back()" />
+                            </td>
+                                    <td style="padding-left:10px">
+                                <input runat="server" id="bMacys" type="button" value="Macy's" onclick="location.href='../survey/macys.aspx'" />
+                            </td>
+                                </tr>                                
+                                </table>
+                                
+                            <td style="text-align:right;width:10%" align="right">
+                                <table cellpadding="0" cellspacing="0">
+                            <tr>
+                            <td style="text-align:right">
+                                <input type="button" runat="server" id="bAdministration" value="Administration" onclick="location.href='../Admin/Reports.aspx'" />
+                            </td>
+                            <td style="text-align:right;padding-left:10px">
+                                <asp:Button runat="server" CssClass="btn" Text="Sales Return" 
+                                    ID="btnSalesReturn" onclick="btnSalesReturn_Click"  />
+                            </td>
+                            <td style="text-align:right;padding-left:10px">
+                                <asp:Button runat="server" CssClass="btn" Text="New Sale" ID="bSales" 
+                                    onclick="bSales_Click"  />
+                            </td>
+                            <td style="text-align:right;padding-left:10px">
+                                <asp:Button runat="server" ID="bLogout" CssClass="btn" Text="Logout" onclick="bLogout_Click" />
+                            </td>
+                            </tr>
+                            </table>
+                            </td>
+                        </tr>
+                    </table>                    
+                 </td>
+              </tr>
+              <tr>
+                <td id="pagemid" style="height:90%;min-height:600px" valign="top"><div id="middiv" runat="server" style="background:#ffffff;width:100%;height:100%;min-height:600px;max-height:600px;overflow:auto" class="box-shadow">
+                    <asp:ContentPlaceHolder ID="M" runat="server"/>
+                  </div></td>
+              </tr>
+            </table></td>
+          <td width="1%" height="100%" ></td>
+          <td width="20%" height="100%" style="padding-top:10px" valign="top"><c:Cart ID="cart" runat="server" /></td>
+        </tr>
+      </table>
+    </div>
+    <div class="clear"> </div>
+  </div>
+  <div class="footer"> </div>
+</form>
+ <style type="text/css"> 
+	div.box-shadow{behavior: url(/Scripts/PIE.htc);}
+	input[type=button]{behavior: url(/Scripts/PIE.htc);}
+	.btn{behavior: url(/Scripts/PIE.htc);}
+	.lbtn{behavior: url(/Scripts/PIE.htc);}
+   </style>
+</body>
+</html>

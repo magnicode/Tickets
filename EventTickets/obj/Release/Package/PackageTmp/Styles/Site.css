@@ -1,0 +1,190 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    background-image:url(../images/background.jpg);
+    height:100%!important;
+}
+
+html {
+  height:100%!important;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 100%;        
+    height:100%;    
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;   
+    width: 100%;
+}
+
+.main
+{
+    padding: 0px 12px;    
+    height: 100% !important;    
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.table-box
+    {
+    	background-color:#F8F8F8; 
+    	width:100%; height:100%; 
+    }
+
+.box-shadow {
+      -moz-box-shadow: 5px 5px 5px #000;
+      -webkit-box-shadow: 5px 5px 5px #000;
+      box-shadow: 5px 5px 5px #000;
+      zoom: 1;
+      -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+      background-color:#fff;
+          
+    }  
+ input[type=button],.btn{-moz-box-shadow: 5px 5px 5px #000;
+      -webkit-box-shadow: 5px 5px 5px #000;
+      box-shadow: 5px 5px 5px #000;min-height:40px;border:1px solid #000;cursor:pointer;font-weight:bold;font-size:18px;background-color:#FFf;font-family:Verdana;-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+ input[type=button]:hover,.btn:hover{border:1px solid #ccc;background-color:#F5F5F5;color:#00a;font-family:Verdana}
+ .btn:disabled,input[type="button"]:disabled{-moz-box-shadow: 5px 5px 5px #000;-webkit-box-shadow: 5px 5px 5px #000;;color:#ccc;box-shadow: 5px 5px 5px #000;min-height:40px;border:1px solid #000;cursor:pointer;font-weight:bold;font-size:18px;background-color:#FFf;font-family:Verdana;-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+ .lbtn{padding:5px;-moz-box-shadow: 5px 5px 5px #000;text-decoration:none;-webkit-box-shadow: 5px 5px 5px #000;box-shadow: 5px 5px 5px #000;min-height:30px;border:1px solid #000;cursor:pointer;font-weight:bold;font-size:18px;background-color:#FFf;font-family:Verdana;-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;} 
+ .enmae{width:100%;text-align:center;font-size:14px;font-weight:bold;color:#000;padding-bottom:5px}
+ .edesc{padding-left:5px}
+ .ebox{border:1px solid #ccc;padding:5px 5px 8px 5px}
+ .cbox{border:1px solid #ccc;padding:5px}
+ .cname{width:100%;text-align:center;font-size:14px;font-weight:bold;color:#000}
+ .cimg{width:100%;height:108px;overflow:hidden}
+ .citem{width:200px;padding:5px;cursor:pointer;}
+ 
+ table.grid th
+{
+	border:solid 1px #d3d3d3;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+	color: #000000;
+	position:relative;
+	cursor: default;
+	padding:4px;
+	height:25px;
+	background-color:#9ab1c7;
+}
+table.grid td
+{
+	background:#efefef;text-align:left;height:18px;border:solid 1px #d3d3d3;padding:3px;
+}
+table.grid
+{
+	background-color:#f0f0f0;border:solid 0 px #ffcfcc;
+}
+.aspNetDisabled
+{
+    color:#a0a0a0 !important;
+}

@@ -1,0 +1,5 @@
+F:\sunil\Projects\.Net\EventTickets\EventTickets\bin\EventTickets.dll
+F:\sunil\Projects\.Net\EventTickets\EventTickets\bin\EventTickets.pdb
+F:\sunil\Projects\.Net\EventTickets\EventTickets\obj\Debug\ResolveAssemblyReference.cache
+F:\sunil\Projects\.Net\EventTickets\EventTickets\obj\Debug\EventTickets.dll
+F:\sunil\Projects\.Net\EventTickets\EventTickets\obj\Debug\EventTickets.pdb
